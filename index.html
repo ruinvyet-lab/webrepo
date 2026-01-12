@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>GitHub Uploader</h1>
+  <p>Upload file & folder ke repository GitHub</p>
+
+  <input type="text" id="token" placeholder="GitHub Personal Access Token">
+  <input type="text" id="owner" placeholder="Username GitHub">
+  <input type="text" id="repo" placeholder="Nama Repository">
+  <input type="text" id="path" placeholder="Path folder di repo (opsional)">
+
+  <label class="upload">
+    Upload File
+    <input type="file" id="fileInput">
+  </label>
+
+  <label class="upload">
+    Upload Folder
+    <input type="file" id="folderInput" webkitdirectory>
+  </label>
+
+  <button onclick="upload()">Upload ke GitHub</button>
+
+  <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
